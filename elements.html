@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Elements - Forty by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Problem</strong> <span>solver</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Profile</a></li>
+							<li><a href="landing.html">Skills</a></li>
+							<li><a href="generic.html">Achievements</a></li>
+							<li><a href="elements.html">Projects</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="index.html" class="button primary fit">Get Started</a></li>
+							
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Projects</h1>
+									</header>
+
+									<!-- Content -->
+										<h2 id="content">1. Fan Regulation using temperature sensor:</h2>
+										<p align="justify">
+This project consists of three sections. One senses the temperature by using humidity and temperature sensor namely DHT11. The second section reads the dht11 sensor module’s output and extracts temperature value into a suitable number in Celsius scale and control the fan speed by using PWM. And last part of system shows humidity and temperature on LCD and Fan driver. Here in this project, we have used a sensor module namely DHT11 that already has discuss our previous project namely “Humidity and Temperature Measurement using Arduino”. Here we have only used this DHT sensor for sensing temperature, and then programmed our arduino according to the requirements. Working on this project is very simple. We have created PWM at pwm pin of arduino and applied it at base terminal of the transistor. Then transistor creates a voltage according to the PWM input.</p>
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<h3>Components Required</h3>
+												<p>1. Arduino UNO Board<br>
+													2. LM35 Temperature Sensor<br>
+													3. 12V DC Fan<br>
+													4. 16x2 LCD Display<br>
+													5. Potentiometer 10K<br>
+													6. Transistor 2N2222<br>
+													7. Resistor 1K<br>
+													8. Diode 1N4007<br>
+													9. 12V Power Supply/Adapter</p>
+											</div>
+											<div class="col-6 col-12-small">
+												<h3>Working</h3>
+												<p align="justify">Temperature sensor LM35 senses the temperature and converts it into an electrical (analog) signal, which is applied to the ATmega328 microcontroller of the Arduino UNO Board. The analog value is converted into a digital value. Thus the sensed values of the temperature and speed of the fan are displayed on the LCD. When the temperature exceeds 30°C the fan starts rotating.
+
+A low-frequency pulse-width modulation (PWM) signal, whose duty cycle is varied to adjust the fan’s speed is used. An inexpensive, single, small pass transistor-like 2N222 or BD139 can be used here. It is efficient because the pass transistor is used as a switch.</p>
+											</div>
+											<!-- Break -->
+											<div class="col-6 col-12-small">
+												<h3>Uses</h3>
+												<p align="justify">This project can be used in both the home and
+													Industry. <br>It helps in saving the energy and
+													electricity. </p>
+											</div>
+
+											<div class="col-6 col-12-small">
+												<h3>Future Scopes</h3>
+												<p align="justify">1. In future case we can monitor more
+													parameters like humidity, light and at the
+													same time control them and also can send
+													this data to a remote location using mobile
+													or internet.<br><br>
+													2. Using this technology we can able to draw
+													graphs of variations in these parameters
+													using computer. And the temperature
+													exceeds the limit; a call will be dialed to
+													the respective given number by an
+													automatic Dialer system</p>
+											</div>
+
+											<!--<div class="col-4 col-12-medium">
+												<h3>Uses</h3>
+												<p>This circuit can be used at examination halls, meetings to detect presence of mobile phones and prevent the use of cell phones.
+													It can be used for detecting mobile phones used for spying and unauthorized transmission of audio and video.
+													It can be used to detect stolen mobile phones.</p>
+											</div>
+											<div class="col-4 col-12-medium">
+												<h3>Future Scopes</h3>
+												<p>It is a low range detector, of the order of centimetres.
+													The Schottky diode with higher barrier height is less sensitive to small signals.</p>
+											</div>-->
+											<div class="col-4 col-12-medium">
+												
+											</div>
+										<!--<h2 id="content">2. HAND GESTURE CONTROL ROBOT:</h2>
+										<p>This is kind of car that can be controlled by just hand gestures. This project has tremendous applications especially in health domain. For example, a person who is disabled and is on wheelchair can control his wheelchair just by using hand gestures. We know how dangerous it can be to meet a covid-19 positive patient. This project can be used there as well to open doors wirelessly, to supply food to patients through robot or robotic car just by using hand gestures.</p>
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<h3>Components Required</h3>
+												<p>1. NodeMCU ESP8266.<br>
+													2. Soil Moisture Sensor.<br>
+													3. DHT11 Sensor.<br>
+													4. DS18B20 Waterproof Temperature Sensor Probe.<br>
+													5. LDR.<br>
+													6. Submersible Mini Water Pump.<br>
+													7. 12V LED Strip.<br>
+													8. 7805 Voltage Regulator.</p>
+											</div>
+											<div class="col-6 col-12-small">
+												<h3>Working</h3>
+												<p>The above is the figure of the gestures I have used to control the car. When a gesture is made by the user the MPU-6050 values are mapped by Arduino pro mini(Transmitter). The transmitter controller encodes this value as string and transmits it to Receiving Arduino through 433MHZ transmitter module. The receiving Arduino receives the data through 433MHZ Receiver module. When the data is received its in-String Format. The controller converts this “String” into “INT”and then as per the program it controls the car “FORWARD”, “BACKWARD”, “LEFT”, Or “RIGHT”.</p>
+											</div>-->
+											<!-- Break -->
+											<!--<div class="col-4 col-12-medium">
+												<h3>Application</h3>
+												<p>Wireless Controlled Robots are very useful in many applications like Remote Surveillance military applications, Bomb Diffusion Robots, etc.
+													Hand Gestures controlled robots can be used by Physically challenged in wheelchairs
+													Hand Gesture controlled industrial grade robotic arms can be developed.
+													These robots can also be used on construction Fields and civil works.</p>
+											</div>
+											<div class="col-4 col-12-medium">
+												<h3>Future Scopes</h3>
+												<p>Its having future scope of advanced robotic arms that are designed like the human hand itself can easily controlled using hand gesture only. It also having proposed utility in field of construction, medical science, hazardous waste disposal etc.</p>
+											</div>-->
+											<div class="col-4 col-12-medium">
+												
+											</div>
+										</div>
+										</div>
+
+									<hr class="major" />
+
+															
+
+				<!-- Contact -->
+				<section id="contact">
+					<div class="inner">
+						
+						<section class="split">
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-envelope"></span>
+									<h3>Email</h3>
+									<span>kavin.ece2020@sece.ac.in</span>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-phone"></span>
+									<h3>Phone</h3>
+									<span>6379474285</span>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-home"></span>
+									<h3>Address</h3>
+									<span>3/315, Chickinaikanpalayam,<br />
+										Paramathi velur(taluk),<br />
+										Namakkal - 23</span>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<br>
+							<li><a href="https://twitter.com/Kavin09597715?t=pzOLCcQCm2ijSIRKVAZ7yA&s=08" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+							<!--<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>-->
+							<li><a href="https://github.com/Nivak123" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/kavin-e-bb928425b" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						</ul>
+						<ul class="copyright">
+							
+						</ul>
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
